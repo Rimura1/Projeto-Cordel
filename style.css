@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root {
+    --poema: 'Square Peg', cursive;
+    --h1:'Bree Serif', serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    min-height: 100vh;
+    background-color: rgba(124, 124, 124, 0.705);
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+
+header > h1 {
+    color: white;
+    font-variant: small-caps;
+    font-family: var(--h1);
+    font-weight: bold;
+    font-size: 8vw;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    padding-left: 40px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: oblique;
+    
+}
+
+main {
+    font-family: var(--poema);
+    font-weight: bold;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-weight: bolder;
+    font-size: 4vw;
+    letter-spacing: 3px;
+}
+
+section.normal {
+    background-color: white;
+    
+}
+
+section.normal p {
+    padding: 3vh;
+}
+
+section.img {
+    background-color: gray;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+section.img#img01 {
+    background-image: url(./imagens/background001.jpg);
+    background-position: center right ;   
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.img#img02 {
+    background-image: url(./imagens/background002.jpg);
+    background-position: center center ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.img p {
+    color:white;
+    display: inline-block;
+    background-color: rgba(20, 20, 20, 0.452);
+    padding: 10px;
+    border-radius: 3%;
+    position: relative;
+    left: -10px;
+    
+}
+
+article.image {
+    padding-left: 22px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+footer > p {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(241, 241, 211);
+}
+
+
+
